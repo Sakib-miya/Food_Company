@@ -1,138 +1,85 @@
-# 🍽️ Food Company SQL Data Analysis Project
+# 🍽️ Food Company Sales Analysis (SQL Project)
 
-![Food Company Analytics](https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=1200&q=80)
+![Food Analytics](https://images.pexels.com/photos/6602826/pexels-photo-6602826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400)
 
-## 📊 Project Overview
+## 📌 Overview
 
-This SQL-based project explores **food sales data across countries, categories, and customer types**, aiming to generate deep business insights for decision-makers.
+This project presents a comprehensive SQL-based analysis of a **global food company's order data**, containing over **500,000 records**. The aim is to uncover key business insights to help optimize product strategy, revenue growth, and customer engagement.
 
-This dataset mimics real-world scale with **500,000+ food orders**. You’ll find answers to questions like:
-- What are the most sold food products?
-- Which customer segment brings in the most revenue?
-- What does monthly growth look like?
-
-🔍 **Why this project?**
-This project demonstrates your skills in:
-- Writing clean SQL queries
-- Using CTEs and window functions
-- Performing business and customer analytics
-- Solving real-world business questions using data
+It is designed as a portfolio-ready project to showcase SQL and data storytelling skills to potential employers and recruiters.
 
 ---
 
-## 🗃️ Dataset Description
+## 📂 Dataset Description
 
-| Column Name        | Description                                |
-|--------------------|--------------------------------------------|
-| `Order_ID`         | Unique ID for each order                   |
-| `Product`          | Name of the food product                   |
-| `Category`         | Product category (e.g. Snacks, Drinks)     |
-| `Quantity`         | Quantity sold                              |
-| `Revenue`          | Total order revenue                        |
-| `Order_Date`       | Date of order                              |
-| `Customer_ID`      | Unique customer ID                         |
-| `Customer_Segment` | Segment: Corporate, Consumer, etc.         |
-| `Country`          | Customer’s country                         |
-| `Region`           | Sales region                               |
+The dataset contains detailed information about customer orders across different regions, customer segments, and product categories. Below are the main columns:
 
----
-
-## 📌 Key Questions Answered in SQL
-
-Each query is solved using MySQL and explained clearly:
-
-### 1. Top 10 Food Items by Quantity Sold  
-_Identify most popular food products._
-
-### 2. Revenue by Product Category  
-_Find which categories generate the most money._
-
-### 3. Monthly Order Trends  
-_Spot seasonality in order volume._
-
-### 4. Best-selling Item in Each Country  
-_Using `RANK()` to identify top product per country._
-
-### 5. Avg. Order Value by Customer Segment  
-_Compare spending habits across segments._
-
-### 6. Country with Highest Revenue  
-_Target best-performing country for growth._
-
-### 7. Daily Orders and Revenue  
-_Track busy and slow days._
-
-### 8. Repeat Customers (5+ Orders)  
-_Evaluate customer retention._
-
-### 9. Most Profitable Product per Category  
-_Which product in each category is most valuable?_
-
-### 10. Total Revenue by Region  
-_Regional performance breakdown._
-
-### 11. Top 10 Customers by Lifetime Spend  
-_Look at your highest-paying customers._
-
-### 12. Order Size Distribution  
-_Label orders as Small, Medium, or Large._
-
-### 13. Revenue Share by Product Category  
-_Easy to visualize in pie charts._
-
-### 14. Monthly Revenue Growth Rate  
-_Percentage growth month-over-month._
-
-### 15. Category Revenue Trend by Quarter  
-_Sales trends per category by business quarter._
+| Column              | Description                                   |
+|---------------------|-----------------------------------------------|
+| `Order_ID`          | Unique ID of the order                        |
+| `Product`           | Name of the food item                         |
+| `Category`          | Food category (e.g., Snack, Beverage)         |
+| `Quantity`          | Number of items ordered                       |
+| `Revenue`           | Total revenue from the order                  |
+| `Order_Date`        | Date when the order was placed                |
+| `Customer_ID`       | Unique customer ID                            |
+| `Customer_Segment`  | Type of customer (e.g., B2B, Retail)          |
+| `Country`           | Country where the order was made              |
+| `Region`            | Region grouping countries (e.g., Asia, Europe)|
 
 ---
 
-## 🧠 Skills Demonstrated
+## 🎯 Project Goals
 
-- ✅ Complex `GROUP BY` aggregation
-- ✅ `CASE` statements for categorization
-- ✅ CTEs (`WITH`) for layered logic
-- ✅ Window functions (`RANK`, `LAG`) for ranking/trends
-- ✅ Monthly/quarterly time series analysis
-
----
-
-## 🛠️ Tech Stack
-
-- **SQL**: MySQL 8+
-- **Tool**: MySQL Workbench
-- **Dataset**: 500,000+ synthetic rows
-- **Optional**: Power BI or Tableau for visualizations
+- Analyze product sales and revenue performance  
+- Track growth trends and customer behavior  
+- Identify top-performing products and countries  
+- Understand order size distribution and segments  
+- Build SQL expertise using real business context
 
 ---
 
-## 📎 How to Use
+## 🛠️ Tools Used
 
-1. Import the CSV file (`food_company_orders.csv`) into MySQL Workbench.
-2. Run the `Food_Analysis_Queries.sql` file.
-3. Customize queries or create dashboards for visual insights.
-
----
-
-## 📈 Suggested Visualizations
-
-If you plan to make this into a Power BI or Tableau dashboard, consider:
-- 📊 Pie chart: Revenue by category
-- 📉 Line chart: Monthly revenue trend
-- 📈 Bar chart: Top-selling products
-- 🗺️ Map: Revenue by country
+- **Database**: MySQL  
+- **Language**: SQL  
+- **IDE**: MySQL Workbench  
+- **Data Format**: CSV (~500k rows)
 
 ---
 
-## 📬 Contact
+## 🧠 Skills Highlighted
 
-**Your Name**  
-🔗 [LinkedIn](https://linkedin.com/in/your-profile) • 🌐 [Portfolio](https://your-portfolio.com)
+- SQL Aggregation and Grouping  
+- CTEs and Window Functions  
+- Date-based analysis and formatting  
+- Performance optimization with indexes  
+- Business storytelling via SQL
 
 ---
 
-## ⭐ Star This Project
+## 🧑‍💼 Use Case: Why This Project?
 
-If you like this project, give it a ⭐ and share it with other aspiring data analysts!
+This is a perfect project for anyone looking to:
+
+- Build a strong **SQL portfolio**  
+- Demonstrate real-world business analysis skills  
+- Impress hiring managers with **clean code** and **clear insights**  
+- Prepare for data analyst or business intelligence roles
+
+---
+
+## 👨‍💻 Author
+
+**Name:** *[Mohammad Sakib Miya]*  
+**LinkedIn:** *[Your LinkedIn Profile]*  
+ 
+
+---
+
+## 📄 License
+
+This project is open for educational use. Feel free to fork, modify, or build upon it!
+
+---
 
