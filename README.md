@@ -1,6 +1,6 @@
 # 🍽️ Food Company Sales Analysis (SQL Project)
 
-![Food Analytics](https://images.pexels.com/photos/6602826/pexels-photo-6602826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400)
+![Food Company Dashboard](https://images.pexels.com/photos/4393661/pexels-photo-4393661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400)
 
 ## 📌 Overview
 
@@ -71,15 +71,12 @@ This is a perfect project for anyone looking to:
 
 ## 👨‍💻 Author
 
-**Name:** *[Mohammad Sakib Miya]*  
+**Name:** *[Your Name]*  
 **LinkedIn:** *[Your LinkedIn Profile]*  
- 
+**GitHub:** *[Your GitHub Profile]*  
 
 ---
 
 ## 📄 License
 
 This project is open for educational use. Feel free to fork, modify, or build upon it!
-
----
-
