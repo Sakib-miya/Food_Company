@@ -71,9 +71,9 @@ This is a perfect project for anyone looking to:
 
 ## 👨‍💻 Author
 
-**Name:** *[Your Name]*  
+**Name:** *[Mohammad Sakib Miya]*  
 **LinkedIn:** *[Your LinkedIn Profile]*  
-**GitHub:** *[Your GitHub Profile]*  
+  
 
 ---
 
