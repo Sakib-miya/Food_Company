@@ -72,7 +72,7 @@ This is a perfect project for anyone looking to:
 ## 👨‍💻 Author
 
 **Name:** *[Mohammad Sakib Miya]*  
-**LinkedIn:** *[Your LinkedIn Profile]*  
+
   
 
 ---
