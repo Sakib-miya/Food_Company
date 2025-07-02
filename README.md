@@ -1,112 +1,50 @@
-# 🍔 Food Company Sales Analytics SQL Project
+# 🍽️ Food Company SQL Data Analysis Project
 
-![Food Dashboard](https://raw.githubusercontent.com/abhisheknaiidu/awesome-github-profile-readme/master/img/food-analytics.png)
+![Food Dashboard](https://cdn.dribbble.com/userupload/6930877/file/original-261a1247f3562ccad1cf93466c23f260.png?resize=1024x768)
 
-## 🔍 Project Overview
+## 📊 Project Overview
 
-This SQL project explores and analyzes **1 million+ rows** of synthetic sales data for a fictional global **food company**.  
-It simulates real-world transactional data with orders, products, customers, and regional sales insights.
+This project presents a **SQL-driven analysis of a large food company’s sales and customer data**. With over 500,000 records, the dataset covers order trends, product performance, customer segmentation, and regional revenue data. The goal is to deliver insights that can help stakeholders make **data-informed business decisions**.
 
-🎯 The goal is to demonstrate practical SQL skills by solving business-critical questions using aggregations, date logic, and window functions.
-
----
-
-## 🧠 Skills Demonstrated
-
-- Writing complex SQL queries for business scenarios  
-- Using **CTEs** and **window functions** like `RANK()` and `LAG()`  
-- Performing **sales trend analysis** using dates  
-- Segmenting customers and classifying orders  
-- Calculating **KPIs** like revenue growth, top products, repeat customers
+This project is built entirely in **MySQL** and is designed to showcase skills in:
+- Writing efficient SQL queries
+- Using window functions and CTEs
+- Analyzing customer behavior and sales trends
+- Delivering actionable business intelligence
 
 ---
 
-## 📁 Dataset Summary
+## 🗂️ Dataset Description
 
-**Table Name:** `food_company_orders`
+The dataset contains **synthetic but realistic data** for a food company and includes the following fields:
 
-| Column Name        | Description                                 |
-|--------------------|---------------------------------------------|
-| `Order_ID`         | Unique transaction ID                       |
-| `Product`          | Food item sold                              |
-| `Category`         | Product category (e.g., Beverages, Snacks)  |
-| `Quantity`         | Number of units sold                        |
-| `Revenue`          | Revenue generated from sale                 |
-| `Order_Date`       | Date of transaction                         |
-| `Customer_ID`      | Unique ID per customer                      |
-| `Customer_Segment` | Segment (e.g., Corporate, Consumer)         |
-| `Country`          | Country of order                            |
-| `Region`           | Region of order (e.g., North America)       |
-
----
-
-## 📊 Business Questions Answered
-
-1. **Top 10 food items by total quantity sold**
-2. **Revenue by product category**
-3. **Monthly order trends**
-4. **Best-selling item in each country** (`RANK()` used)
-5. **Average order value by customer segment**
-6. **Country with highest total revenue**
-7. **Daily revenue and order trends**
-8. **Repeat customers with 5+ orders**
-9. **Most profitable product in each category** (`RANK()` used)
-10. **Revenue breakdown by region**
-11. **Top 10 customers by lifetime value**
-12. **Order size distribution (Small, Medium, Large)**
-13. **Revenue share by category (%)** – great for pie charts
-14. **Month-over-month revenue growth (%)**
-15. **Quarterly sales trends by product category**
+| Column Name        | Description                          |
+|--------------------|--------------------------------------|
+| `Order_ID`         | Unique identifier for each order     |
+| `Product`          | Name of the food item                |
+| `Category`         | Product category (Snacks, Beverages…)|
+| `Quantity`         | Quantity sold in the order           |
+| `Revenue`          | Total order value (USD)              |
+| `Order_Date`       | Date of order                        |
+| `Customer_ID`      | Unique customer ID                   |
+| `Customer_Segment` | Segment (Individual, Corporate…)     |
+| `Country`          | Customer country                     |
+| `Region`           | Sales region                         |
 
 ---
 
-## 🧮 SQL Features Used
+## 🧠 Business Questions Answered with SQL
 
-- `GROUP BY`, `ORDER BY`, `LIMIT`
-- `RANK()` and `LAG()` window functions
-- `DATE_FORMAT()`, `YEAR()`, `QUARTER()` for time grouping
-- `CASE WHEN` for order segmentation
-- Common Table Expressions (CTEs)
+Below are the key questions answered using SQL with explanations:
 
----
+1. **Top 10 food items by total quantity sold**  
+   _Find the most popular products company-wide._
 
-## 🛠 Tech Stack
+2. **Revenue by product category**  
+   _Which categories generate the most income?_
 
-- **Database**: MySQL 8.x  
-- **Tool**: MySQL Workbench / DB Visualizer  
-- **Dataset**: Generated with Faker and custom logic  
-- **Project Type**: Analyst Portfolio, Real-World Business Use Case
+3. **Monthly order volume trends**  
+   _Analyze seasonal demand patterns._
 
----
-
-## 💼 Use Case
-
-This project simulates the kind of analysis you'd do in a **retail/FMCG company** to:
-- Identify key growth drivers
-- Track customer behavior
-- Monitor performance by region
-- Evaluate top products
-- Forecast based on trends
-
----
-
-## ✅ How to Use
-
-1. Import the CSV file into your MySQL database
-2. Run the table creation script:
-   ```sql
-   CREATE DATABASE Food_Analysis;
-   USE Food_Analysis;
-
-   CREATE TABLE food_company_orders (
-       Order_ID VARCHAR(50),
-       Product VARCHAR(100),
-       Category VARCHAR(100),
-       Quantity INT,
-       Revenue DECIMAL(10,2),
-       Order_Date DATE,
-       Customer_ID VARCHAR(50),
-       Customer_Segment VARCHAR(50),
-       Country VARCHAR(50),
-       Region VARCHAR(50)
-   );
+4. **Top-selling food item in each country**  
+   _Use window functions to determine the most ordered item_
